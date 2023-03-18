@@ -4,7 +4,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
 import { errors } from 'celebrate';
-import cors from 'cors';
+// import cors from 'cors';
 import errorHandler from './middlewares/error-handler';
 import { DB_ADDRESS } from './config';
 import routes from './routes';
@@ -14,15 +14,15 @@ const app = express();
 mongoose.connect(DB_ADDRESS);
 
 // Только для локальных тестов. Не используйте это в продакшене
-app.use(cors({
-  origin: '*',
-  credentials: true,
-  methods: 'GET,HEAD,POST,PATCH,PUT,DELETE',
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
+// app.use(cors({
+//   origin: '*',
+//   credentials: true,
+//   methods: 'GET,HEAD,POST,PATCH,PUT,DELETE',
+//   allowedHeaders: ['Content-Type', 'Authorization'],
+//   preflightContinue: false,
+//   optionsSuccessStatus: 204,
 
-}));
+// }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
