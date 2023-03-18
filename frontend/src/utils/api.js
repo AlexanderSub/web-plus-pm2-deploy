@@ -139,7 +139,7 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('https://api.subbotin.students.nomoredomains.work/');
+  const api = new Api('https://api.subbotin.students.nomoredomains.work');
   
   export default api;
   
