@@ -19,8 +19,10 @@ app.use(cors({
     'https://subbotin.students.nomoredomains.work',
     'http://subbotin.students.nomoredomains.work',
   ],
+  credentials: true,
   methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
+  optionsSuccessStatus: 204,
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
