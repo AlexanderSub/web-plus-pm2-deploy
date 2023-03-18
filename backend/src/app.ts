@@ -15,7 +15,8 @@ mongoose.connect(DB_ADDRESS);
 
 // Только для локальных тестов. Не используйте это в продакшене
 app.use(cors({
-  origin: 'https://subbotin.students.nomoredomains.work/'
+  origin: 'https://subbotin.students.nomoredomains.work/',
+  preflightContinue: false,
 }))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
