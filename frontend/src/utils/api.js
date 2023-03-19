@@ -140,6 +140,7 @@ class Api {
   }
   // Замените на адрес вашего бэкенда
   const api = new Api('https://api.subbotin.students.nomoredomains.work');
+  // const api = new Api('http://localhost:3000');
   
   export default api;
   
