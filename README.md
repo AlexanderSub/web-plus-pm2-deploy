@@ -2,7 +2,7 @@
 
 Стартеркит проекта по автоматизации деплоя фронтенда и бэкенда при помощи pm2 (pm2 deploy)
 
-IP адрес 158.160.58.218
+IP адрес 158.160.41.128
 
 Frontend https://subbotin.students.nomoredomains.work
 
